@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_marginBottom="20dp"
+    android:elevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgListLomba"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/round_outline"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/txtNamaLomba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgListLomba"
+            android:textStyle="bold"
+            android:paddingHorizontal="15dp"
+            android:text="123"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/txtPenyelenggaraLomba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNamaLomba"
+            android:paddingHorizontal="15dp"
+            android:text="123"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPenyelenggaraLomba"
+            android:paddingHorizontal="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTglLomba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtKategoriLomba"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Politik"
+                android:gravity="right"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

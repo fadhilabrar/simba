@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Final</string>
+    <string name="img_folder">http://192.168.43.194:8079/lomba/lomba/images/</string>
+</resources>

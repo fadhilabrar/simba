@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menuLomba"
+        android:icon="@drawable/ic_baseline_class_24"
+        android:title="Lomba" />
+
+    <item
+        android:id="@+id/menuTambah"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:title="Tambah Lomba" />
+
+    <item
+        android:id="@+id/menuArtikel"
+        android:icon="@drawable/ic_baseline_chrome_reader_mode_24"
+        android:title="Artikel" />
+
+    <item
+        android:id="@+id/menuProfil"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        android:title="Profil" />
+
+</menu>

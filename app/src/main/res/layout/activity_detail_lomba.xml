@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lomba.views.ActivityDetailLomba">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbDetailLomba"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#130250"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Subhead"
+            app:titleTextColor="#FFF" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgDetailLomba"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical"
+            android:layout_below="@id/imgDetailLomba">
+
+            <TextView
+                android:id="@+id/txtDetailLombaNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Nama Lomba"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/txtDetailLombaTgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tanggal Pelaksanaan"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearInfo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/linearTitle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearPenyelenggara"
+                    android:layout_width="125dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penyelenggara"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/txtDetailLombaPenyelenggara"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tes"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearTema"
+                    android:layout_toEndOf="@id/linearPenyelenggara"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tema"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/txtDetailLombaTema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tes"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLokasi"
+                    android:layout_width="125dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lokasi"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/txtDetailLombaLokasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tes"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearHadiah"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_toEndOf="@id/linearLokasi">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hadiah"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:id="@+id/txtDetailLombaHadiah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tes"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearInfo"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDetailLombaDeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textSize="16sp"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
